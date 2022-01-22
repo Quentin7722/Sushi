@@ -34,7 +34,7 @@
 .about .aboutBottom h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,9 +42,6 @@
 }
 
 @media (max-width: 650px) {
-  .about .aboutBottom h1 {
-   font-size: 50px;
-  }
   .about p {
     width: 100%;
   }
