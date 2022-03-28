@@ -1,6 +1,7 @@
+import "../styles/About.css";
 import React from "react";
 import Chopsticks from "../assets/Chopsticks.jpg";
-import "../styles/About.css";
+
 function About() {
   return (
     <div className="about">

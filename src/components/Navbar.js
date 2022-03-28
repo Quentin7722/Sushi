@@ -1,8 +1,7 @@
+import "../styles/Navbar.css";
 import React, { useState } from "react";
 import Logo from "../assets/SushiLogo.png";
 import { Link } from "react-router-dom";
-
-import "../styles/Navbar.css";
 
 function Navbar() {
   const [toggleButtonClass, setToggleButtonClass] = useState(true);
@@ -30,7 +29,7 @@ function Navbar() {
         <span className="bar"></span>
         <span className="bar"></span>
       </p>
-      <img src={Logo} />
+      <img src={Logo} alt="Logo" />
       <div className={navLinksClass ? "navbar-links" : "navbar-links active"}>
         <ul onClick={NavLinksFct}>
           <li>
@@ -44,6 +43,9 @@ function Navbar() {
           </li>
           <li>
             <Link to="/Contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/Panier">Panier</Link>
           </li>
         </ul>
       </div>
