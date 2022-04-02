@@ -4,7 +4,7 @@
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 10px 10%;
   z-index: 999;
   width: 100%;
   height: 12vh;
@@ -12,7 +12,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 .navbar img{
-  width: 12vh;
+  max-width: 200px;
+  max-height: 100%;
 }
 .navbar-links {
   height: 100%;
@@ -81,7 +82,7 @@
   position: absolute;
 }
 .toggle-button.active span:nth-child(1) {
-  transform: translateY(5px)rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
   top: 0px;
 }
 
@@ -99,10 +100,8 @@
   .navbar {
       flex-direction: column;
       align-items: flex-start;
-      padding: 5px 0 0 10px;
-  }
-  .navbar img{
-    width: 13vh;
+      justify-content: center;
+      padding: 10px;
   }
   .navbar ul {
       background-color: white;
