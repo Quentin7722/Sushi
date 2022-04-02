@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { MenuList } from "../helpers/MenuList";
 import MenuItem from "../components/MenuItem";
 import "../styles/Menu.css";
+import Alert from "@mui/material/Alert";
+import CartContext from "../CartContext";
+import { Fade } from "@mui/material";
 
 function Menu() {
+  const { open } = useContext(CartContext);
+
   return (
     <div className="menu">
       <h1 className="menuTitle">
@@ -21,6 +26,13 @@ function Menu() {
           );
         })}
       </div>
+      {open === true && (
+        <Fade in={open}>
+          <Alert variant="filled" severity="success" className="alert">
+            Article ajoué au panier !
+          </Alert>
+        </Fade>
+      )}
     </div>
   );
 }

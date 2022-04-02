@@ -1,7 +1,7 @@
 import React from "react";
 import ContactImage from "../assets/Contact.jpg";
 import "../styles/Contact.css";
-import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
+import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 
 function Contact() {
   return (

@@ -42,10 +42,10 @@ function Navbar() {
             <Link to="/About">À propos</Link>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
+            <Link to="/Panier">Panier</Link>
           </li>
           <li>
-            <Link to="/Panier">Panier</Link>
+            <Link to="/Contact">Contact</Link>
           </li>
         </ul>
       </div>

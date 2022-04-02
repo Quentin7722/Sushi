@@ -54,6 +54,10 @@
   left: 10px;
   bottom: 5px;
 }
+.alert{
+  position: fixed; 
+  bottom: 5%;
+}
 
 
 @media only screen and (max-width: 1300px) {

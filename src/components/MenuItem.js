@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
+import Button from "@mui/material/Button";
 import { useContext } from "react";
 import CartContext from "../CartContext";
 
@@ -14,7 +14,7 @@ function MenuItem({ image, name, price }) {
       <Button
         className="btn--menuItem"
         variant="contained"
-        color="secondary"
+        color="primary"
         onClick={() => addToCart(name, price)}
       >
         Ajouter au panier
